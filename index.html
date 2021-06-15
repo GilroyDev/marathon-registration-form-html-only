@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+        First Project of Web Dev Bootcamp on Udemy. Build a Marathon Registration Form in HTML
+
+        Header
+        First & Last name input
+        Radio Buttons
+        Email & Password input
+        Dropdown box
+        Submit button
+    -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marathon Registration</title>
+</head>
+
+<body>
+    <h1>Marathon Registration!</h1>
+    <form action="">
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <div>
+            <p>Select a race:</p>
+            <input type="radio" id="full" name="race" value="full" required>
+            <label for="full">Full Marathon</label><br>
+            <input type="radio" id="half" name="race" value="half">
+            <label for="female">Half Marathon</label><br>
+            <input type="radio" id="fun" name="race" value="fun">
+            <label for="other">5k Fun Run</label>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age Group:</label>
+            <select id="age" name="age" required>
+                <option value="child">Under 12</option>
+                <option value="teen">13 - 18</option>
+                <option value="adult">18 - 49</option>
+                <option value="elder">50+</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
